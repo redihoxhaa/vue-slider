@@ -45,6 +45,9 @@ createApp({
                 this.currentImage = 0;
             }
         },
+        changePhoto(index) {
+            this.currentImage = index;
+        }
     },
     mounted() {
 

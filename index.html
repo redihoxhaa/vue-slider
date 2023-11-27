@@ -28,7 +28,7 @@
                     <div class="prev" @click="prev()"></div>
                     <div class="next" @click="next()"></div>
                     <div v-for="(element, index) in slides" class="thumb"
-                        :class="index === currentImage ? 'active' : ''">
+                        :class="index === currentImage ? 'active' : ''" @click="changePhoto(index)">
                         <img :src="element.image" :alt="`Immagine ${element.title}`">
                     </div>
                 </div>

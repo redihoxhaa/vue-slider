@@ -29,6 +29,7 @@ createApp({
                 }
             ],
             currentImage: 0,
+            autoPlay: undefined
         }
 
     },
@@ -47,9 +48,17 @@ createApp({
         },
         changePhoto(index) {
             this.currentImage = index;
+        },
+        playIt() {
+            this.autoPlay = setInterval(this.next, 3000);
+        },
+        stopIt() {
+            clearInterval(this.autoPlay)
         }
+
     },
     mounted() {
+        this.playIt()
 
     }
 }).mount('#app')

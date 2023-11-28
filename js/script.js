@@ -29,7 +29,7 @@ createApp({
                 }
             ],
             currentImage: 0,
-            autoPlay: undefined
+            autoPlay: null,
         }
 
     },

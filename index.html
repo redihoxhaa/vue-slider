@@ -14,7 +14,7 @@
     <div id="app">
 
         <div class="container">
-            <div class="slider-wrapper" tabindex="0" @mouseover="stopIt()" @mouseleave="playIt()">
+            <div class="slider-wrapper" tabindex="0" @mouseenter="stopIt()" @mouseleave="playIt()">
 
                 <div class=" item">
                     <img :src="slides[currentImage].image" :alt="`Immagine ${slides[currentImage].title}`" />
